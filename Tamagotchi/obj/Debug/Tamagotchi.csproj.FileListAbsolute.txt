@@ -1,0 +1,6 @@
+D:\tezza\Documents\GitHub\Tamagotchi\Tamagotchi\bin\Debug\Tamagotchi.exe.config
+D:\tezza\Documents\GitHub\Tamagotchi\Tamagotchi\bin\Debug\Tamagotchi.exe
+D:\tezza\Documents\GitHub\Tamagotchi\Tamagotchi\bin\Debug\Tamagotchi.pdb
+D:\tezza\Documents\GitHub\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.csprojResolveAssemblyReference.cache
+D:\tezza\Documents\GitHub\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.exe
+D:\tezza\Documents\GitHub\Tamagotchi\Tamagotchi\obj\Debug\Tamagotchi.pdb

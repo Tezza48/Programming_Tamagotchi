@@ -29,6 +29,8 @@ namespace Tamagotchi
 
                     if (keyPressed.Key == ConsoleKey.F)
                         tama.Feed(25);
+                    if (keyPressed.Key == ConsoleKey.S)
+                        tama.SaveState();
                 }
             }
         }

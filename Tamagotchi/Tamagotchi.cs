@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using System.IO;
 
 namespace Tamagotchi
 {
@@ -125,7 +126,34 @@ namespace Tamagotchi
 
         public bool SaveState()
         {
-            return true;
+            // values to save
+            //  age
+            //  health
+            //  energy
+            //  hunger
+            //  isSleeping
+            string[] linesToSave =
+            {
+                "# Age", age.ToString(),
+                "# Health",
+                health.ToString(),
+                "# Energy",
+                energy.ToString(),
+                "# Hunger",
+                hunger.ToString(),
+                "# isSleeping",
+                isSleeping.ToString()
+            };
+
+            try
+            {
+                File.WriteAllLines("tama_save.txt", linesToSave);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public void LoadState()
