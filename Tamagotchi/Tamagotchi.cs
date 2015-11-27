@@ -134,7 +134,8 @@ namespace Tamagotchi
             //  isSleeping
             string[] linesToSave =
             {
-                "# Age", age.ToString(),
+                "# Age",
+                age.ToString(),
                 "# Health",
                 health.ToString(),
                 "# Energy",
@@ -158,6 +159,12 @@ namespace Tamagotchi
 
         public void LoadState()
         {
+            string[] loadedLines = File.ReadAllLines(@"tama_save.txt");
+            Int32.TryParse(loadedLines[1], out age);
+            Int32.TryParse(loadedLines[3], out health);
+            Int32.TryParse(loadedLines[5], out energy);
+            Int32.TryParse(loadedLines[7], out hunger);
+            Boolean.TryParse(loadedLines[9], out isSleeping);
 
         }
     }

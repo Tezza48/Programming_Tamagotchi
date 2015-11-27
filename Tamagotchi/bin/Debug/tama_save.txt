@@ -1,10 +1,10 @@
 # Age
-0
+19
 # Health
 100
 # Energy
-85
+56
 # Hunger
-12
+56
 # isSleeping
-False
+True

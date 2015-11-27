@@ -12,6 +12,8 @@ namespace Tamagotchi
         {
             Tamagotchi tama = new Tamagotchi();
 
+            tama.LoadState();
+
             while(true)
             {
                 Console.Clear();
@@ -31,6 +33,8 @@ namespace Tamagotchi
                         tama.Feed(25);
                     if (keyPressed.Key == ConsoleKey.S)
                         tama.SaveState();
+                    if (keyPressed.Key == ConsoleKey.L)
+                        tama.LoadState();
                 }
             }
         }
